@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('test3.jpeg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            position: relative;
+            margin-bottom: 30px;
+            width: 180px; 
+            height: 180px; 
+            border-radius: 50%;
+            background-color: #fff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .logo {
+            width: 65%;
+            height: auto;
+            z-index: 1;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .round-button {
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color:#fff;
+            color: #8B4513;
+            font-size: 16px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            overflow: hidden;
+            width: 120%; 
+            max-width: 500px; 
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .round-button:hover {
+            background-color: #8B4513;
+            color: #fff;
+        }
+
+       
+        @media screen and (max-width: 768px) {
+            .round-button {
+                width: 80%; 
+                margin-left: 10%; 
+                margin-right: 10%;
+            }
+            .round-button img {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="test1.png" alt="Votre Logo" class="logo">
+    </div>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1flgGylC-ySYQ-MqApMT0TqZO23IbZvib/view?usp=sharing"
+        class="round-button">Découvrez notre carte</a>
+        <a href="https://drive.google.com/file/d/1YW8u7P6nVuTwK11ErFuXjFK38DnwveTp/view?usp=sharing"
+            class="round-button">Plongez-vous dans le monde de Cousbeldi</a>
+        <a href="https://www.tiktok.com/@cousbeldi" class="round-button">Tiktok </a>
+        <a href="https://www.instagram.com/cousbeldi/" class="round-button">Instagram</a>
+        <a href="https://www.facebook.com/cousbeldi" class="round-button">Facebook</a>
+        <a href="https://www.linkedin.com/company/cousbeldi/" class="round-button">LinkedIn</a>
+        <a href="https://www.tiktok.com/@cousbeldi" class="round-button">Tiktok <img src="test4.png" style="width: 15px; height: 15px;  z-index: 1;"></a>
+
+    </div>
+</body>
+
+</html>
